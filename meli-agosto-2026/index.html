@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MELI · Resultado Operativo Nacional · Agosto 2026</title>
+<style>
+:root{--bg:#f4f7fb;--card:#fff;--ink:#132238;--muted:#6a788b;--navy:#173d63;--navy2:#2a5b87;--line:#dfe7f0;--green:#1e7a57;--greenbg:#eaf6f0;--amber:#8b6514;--amberbg:#fff7df;--shadow:0 10px 30px rgba(22,58,95,.08)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Segoe UI,Arial,sans-serif}.wrap{max-width:1180px;margin:auto;padding:20px 16px 44px}
+.hero{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;border-radius:24px;padding:26px;box-shadow:var(--shadow)}.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.75;font-weight:800}.hero h1{font-size:clamp(26px,4vw,40px);margin:7px 0 7px;line-height:1.08}.hero p{margin:0;color:rgba(255,255,255,.84);font-size:14px}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.control{display:flex;gap:9px;align-items:center;background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:9px 12px}.control label{font-size:12px;opacity:.8}.control select{border:0;outline:0;background:transparent;color:#fff;font-weight:800}.control option{color:#17263a;background:#fff}
+.section{margin-top:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.kpi{padding:18px;min-height:118px}.label{font-size:11px;text-transform:uppercase;letter-spacing:.055em;color:var(--muted);font-weight:800}.value{font-size:clamp(24px,3vw,34px);font-weight:850;margin-top:9px;letter-spacing:-.03em;white-space:nowrap}.meta{font-size:12px;color:var(--muted);margin-top:5px}.kpi.margin{background:linear-gradient(180deg,#fff,var(--greenbg));border-color:#cce7db}.kpi.margin .value{color:var(--green)}
+.grid{display:grid;grid-template-columns:1fr 1.4fr;gap:14px}.panel{padding:19px}.title{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:14px}.title h2{font-size:18px;margin:0}.title small{color:var(--muted)}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:10px}.box{border:1px solid var(--line);border-radius:14px;padding:14px;background:#fbfdff}.box h3{font-size:15px;margin:0 0 10px}.metric{display:flex;justify-content:space-between;gap:14px;padding:8px 0;border-top:1px solid #eef2f6;font-size:13px}.metric:first-of-type{border-top:0}.metric span{color:var(--muted)}.metric strong{font-variant-numeric:tabular-nums}.metric .m{color:var(--green);font-size:16px}
+.chart{min-width:520px}.chartwrap{overflow:auto}.barrow{display:grid;grid-template-columns:120px 1fr 90px;gap:10px;align-items:center;margin:10px 0}.barlabel{font-size:12px;font-weight:800;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.track{height:18px;background:#edf3f8;border-radius:999px;overflow:hidden}.bar{height:100%;background:linear-gradient(90deg,var(--navy2),#6f96ba);border-radius:999px}.barval{text-align:right;font-size:12px;color:var(--muted);font-weight:800}
+.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:760px}th,td{padding:12px 13px;border-bottom:1px solid #edf1f6;text-align:right;font-size:13px;white-space:nowrap}th{background:#eff5fb;color:#38516d;text-transform:uppercase;font-size:11px;letter-spacing:.045em}th:first-child,td:first-child{text-align:left}.pill{display:inline-flex;min-width:62px;justify-content:center;padding:4px 8px;border-radius:999px;background:var(--greenbg);color:var(--green);font-weight:800}
+.costsummary{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0 15px}.mini{background:#f8fbfe;border:1px solid var(--line);border-radius:13px;padding:12px}.mini span{display:block;font-size:10px;text-transform:uppercase;color:var(--muted);font-weight:800;letter-spacing:.05em}.mini strong{font-size:20px;margin-top:5px;display:block}
+details.region{border:1px solid var(--line);border-radius:14px;background:#fff;overflow:hidden;margin-top:9px}details.region[open]{box-shadow:0 6px 18px rgba(22,58,95,.06)}summary{cursor:pointer;list-style:none;display:grid;grid-template-columns:minmax(160px,1.4fr) repeat(3,minmax(100px,.8fr)) 28px;gap:10px;align-items:center;padding:13px 14px;background:#fbfdff}summary::-webkit-details-marker{display:none}.rname{font-weight:850}.sumcell{text-align:right;color:var(--muted);font-size:11px}.sumcell strong{display:block;color:var(--ink);font-size:13px;margin-top:2px}.chev{width:28px;height:28px;border-radius:50%;background:#eaf2fb;color:var(--navy);display:flex;align-items:center;justify-content:center;font-weight:900}.costbody{padding:13px;border-top:1px solid #edf1f6}.groups{display:grid;grid-template-columns:1fr 1fr;gap:12px}.group{border:1px solid #e8eef5;border-radius:12px;overflow:hidden}.ghead{display:flex;justify-content:space-between;gap:8px;background:#eff5fb;padding:10px 11px;font-size:12px;font-weight:850;color:#38516d}.line{display:grid;grid-template-columns:1fr auto;gap:10px;padding:8px 11px;border-bottom:1px solid #f0f3f7;font-size:12px}.line:last-child{border-bottom:0}.amount{font-weight:800;white-space:nowrap}.warn{display:inline-flex;margin-left:6px;padding:3px 7px;border-radius:999px;background:var(--amberbg);color:var(--amber);font-size:9px;font-weight:850;text-transform:uppercase}
+.note{margin-top:16px;padding:14px 15px;border-radius:14px;border:1px solid #f0dda4;background:var(--amberbg);color:#624a16;font-size:12px}.foot{color:var(--muted);font-size:11px;text-align:right;margin-top:10px}
+@media(max-width:900px){.kpis{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}}
+@media(max-width:650px){.wrap{padding:12px 10px 30px}.hero{padding:20px 16px;border-radius:18px}.filters{display:grid;grid-template-columns:1fr}.control{justify-content:space-between}.control select{max-width:60%}.kpis{gap:8px}.kpi{padding:13px;min-height:104px}.value{font-size:21px}.compare{grid-template-columns:1fr}.panel{padding:14px}summary{grid-template-columns:1fr 28px}.sumcell{display:none}.groups{grid-template-columns:1fr}.costsummary{grid-template-columns:1fr 1fr 1fr}}
+@media(max-width:450px){.costsummary{grid-template-columns:1fr}.mini{display:flex;justify-content:space-between;align-items:center}.mini strong{font-size:18px;margin:0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+<div class="eyebrow">Modelo económico · Agosto 2026</div>
+<h1>MELI · Resultado Operativo Nacional</h1>
+<p>Costos consolidados por región · sin asignación de costos fijos/directos por milla</p>
+<div class="filters">
+<div class="control"><label for="scope">Ámbito</label><select id="scope"><option value="all">Todo</option><option>Buenos Aires</option><option>Interior</option></select></div>
+<div class="control"><label for="region">Región</label><select id="region"><option value="all">Todas</option></select></div>
+</div>
+</header>
+
+<section class="section kpis">
+<div class="card kpi"><div class="label">Facturación MELI</div><div class="value" id="rev">—</div><div class="meta" id="trips">—</div></div>
+<div class="card kpi"><div class="label">Costos operativos</div><div class="value" id="cost">—</div><div class="meta">Costos cargados al momento</div></div>
+<div class="card kpi"><div class="label">Resultado operativo</div><div class="value" id="res">—</div><div class="meta" id="resTrip">—</div></div>
+<div class="card kpi margin"><div class="label">Margen operativo</div><div class="value" id="margin">—</div><div class="meta">Preliminar · no equivale a margen neto</div></div>
+</section>
+
+<section class="section grid">
+<div class="card panel"><div class="title"><h2>Buenos Aires vs. Interior</h2><small>Resumen nacional</small></div><div id="compare" class="compare"></div></div>
+<div class="card panel"><div class="title"><h2>Resultado operativo por región</h2><small id="chartsub">Todas las regiones</small></div><div class="chartwrap"><div id="chart" class="chart"></div></div></div>
+</section>
+
+<section class="section card">
+<div class="title" style="padding:18px 18px 0"><h2>Detalle regional</h2><small id="tablesub"></small></div>
+<div class="tablewrap"><table><thead><tr><th>Región / Provincia</th><th>Viajes</th><th>Facturación</th><th>Costos</th><th>Resultado</th><th>Margen</th><th>Ámbito</th></tr></thead><tbody id="tbody"></tbody></table></div>
+</section>
+
+<section class="section card panel">
+<div class="title"><h2>Detalle de costos</h2><small id="costsub">Apertura por región</small></div>
+<div style="color:var(--muted);font-size:13px">Cada región muestra costos fijos y variables/directos. El detalle responde a los filtros de arriba.</div>
+<div class="costsummary">
+<div class="mini"><span>Costos fijos</span><strong id="fixedKpi">—</strong></div>
+<div class="mini"><span>Costos variables</span><strong id="varKpi">—</strong></div>
+<div class="mini"><span>% variable</span><strong id="varPctKpi">—</strong></div>
+</div>
+<div id="costlist"></div>
+</section>
+
+<div class="note"><strong>Criterio del modelo:</strong> los costos fijos y directos se analizan consolidados por región y no se distribuyen entre Primera, Media y Última Milla según volumen. La apertura por milla queda únicamente como dato fuente para viajes, facturación y pago a choferes/prestadores.</div>
+<div class="foot">Resultado operativo preliminar según la información cargada hasta el momento.</div>
+</div>
+
+<script>
+var data=[
+{r:"AMBA / CABA",s:"Buenos Aires",t:2525,rev:1182355809.23,c:1104093356},
+{r:"Mar del Plata",s:"Buenos Aires",t:302,rev:93643551.18,c:66900656},
+{r:"Bahía Blanca",s:"Buenos Aires",t:231,rev:71317676.15,c:54225265},
+{r:"La Plata",s:"Buenos Aires",t:214,rev:83543702.86,c:52146318},
+{r:"Córdoba",s:"Interior",t:3662,rev:1040096327.40,c:688337628.75},
+{r:"Santa Fe",s:"Interior",t:871,rev:290488691.95,c:210580845},
+{r:"Entre Ríos",s:"Interior",t:146,rev:277452344,c:235834492.40},
+{r:"Chaco",s:"Interior",t:779,rev:226899082.74,c:144945798},
+{r:"Misiones",s:"Interior",t:2270,rev:582139976.98,c:356381923.25},
+{r:"San Luis",s:"Interior",t:455,rev:97527220.83,c:67900488},
+{r:"La Pampa",s:"Interior",t:105,rev:33627336.58,c:23452477}
+].map(function(x){x.res=x.rev-x.c;x.m=x.res/x.rev;return x});
+
+var costs={
+"AMBA / CABA":{f:439205628,v:664887728,fi:[["Leasing / alquiler vehículos · 120 vehículos",291947200],["Expensas Oficina nueva",954415],["Masantonio · 20%",4000000],["Almafuerte · revisar",20000000],["Martinez · revisar",1500000],["Log San Nicolas",1685530],["Autodromo",15928864],["Sueldos coordinación MELI",22937442],["Sueldos indirectos IT/RRHH/Finanzas",34172431],["Administración Cooperativa",8412723],["Flota / mantenimiento Cooperativa",12647023],["Mantenimiento correctivo flota",9000000],["Satelital",3040000],["Seguros flota",12980000]],va:[["Pago choferes / prestadores",490518089],["Combustible",130657565],["Peajes",13233272],["Mantenimiento flota",30478802]]},
+"Mar del Plata":{f:20425355,v:46475301,fi:[["Leasing / alquiler vehículos",13737200],["Alquiler / parking / depósito",4181155],["Sueldos estructura / coordinación",2167000],["Satelital",40000],["Seguros",300000]],va:[["Pago choferes / prestadores",43125300],["Combustible",3350001]]},
+"Bahía Blanca":{f:7282320,v:46942945,fi:[["Leasing / alquiler vehículos",7042320],["Alquiler / parking / depósito",240000]],va:[["Pago choferes / prestadores",45374934],["Combustible · 3 Hiace",1568011]]},
+"La Plata":{f:17432060,v:34714258,fi:[["Leasing / alquiler vehículos",16432060],["Alquiler / parking / depósito · revisar",1000000]],va:[["Pago choferes / prestadores",28883880],["Combustible · 7 Hiace",5249777],["Peajes",580601]]},
+"Córdoba":{f:177904215,v:510433413.75,fi:[["Leasing / alquiler vehículos",115939920],["Alquiler / parking / depósito",27738386],["Sueldos estructura / coordinación / monitoreo",26014000],["Fondo Fijo",1042909],["Seguridad / servicios",1089000],["Seguro Flota",2680000],["Aporte sindical",3000000],["Satelital",400000]],va:[["Pago choferes / prestadores",460982916.75],["Combustible",38632715],["Mantenimiento de flota",9471979],["Otros costos directos",1345803]]},
+"Santa Fe":{f:81268318,v:129312527,fi:[["Leasing / alquiler vehículos",68075000],["Alquiler / parking / depósito",5353318],["Sueldos estructura / coordinación",4800000],["Aporte sindical",3000000],["Satelital",40000]],va:[["Pago choferes / prestadores",110499228],["Combustible",17320299],["Mantenimiento variable",1383000],["Otros costos directos",110000]]},
+"Entre Ríos":{f:0,v:235834492.4,fi:[],va:[["Pago choferes / prestadores",235834492.4]]},
+"Chaco":{f:43595960,v:101349838,fi:[["Leasing / alquiler vehículos",34186960],["Alquiler / parking / depósito",6672000],["Sueldos estructura / coordinación",2477000],["Satelital",260000]],va:[["Pago choferes / prestadores",88430538],["Combustible",11455000],["Mantenimiento variable",998000],["Otros costos directos",466300]]},
+"Misiones":{f:88744500,v:267637423.25,fi:[["Leasing / alquiler vehículos",59651000],["Alquiler / parking / depósito",18616500],["Sueldos estructura / coordinación",8417000],["Seguro Flota",1800000],["Satelital",260000]],va:[["Pago choferes / prestadores",228872267.25],["Combustible",32517515],["Mantenimiento variable",3800000],["Otros costos directos",2447641]]},
+"San Luis":{f:19967018,v:47933470,fi:[["Leasing / alquiler vehículos",14737200],["Alquiler / parking / depósito",1998698],["Seguridad / servicios",2781120],["Seguro Flota",450000]],va:[["Pago choferes / prestadores",44096274],["Combustible",3337196],["Mantenimiento variable",500000]]},
+"La Pampa":{f:7282320,v:16170157,fi:[["Leasing / alquiler vehículos",7042320],["Alquiler / parking / depósito",240000]],va:[["Pago choferes / prestadores",12642400],["Combustible",3027757],["Mantenimiento variable",500000]]}
+};
+
+var scope=document.getElementById("scope"),region=document.getElementById("region");
+function money(n){return "$"+new Intl.NumberFormat("es-AR",{maximumFractionDigits:0}).format(n)}
+function compact(n){return "$"+new Intl.NumberFormat("es-AR",{notation:"compact",maximumFractionDigits:1}).format(n).replace("mil M","mil M")}
+function pct(n){return new Intl.NumberFormat("es-AR",{style:"percent",minimumFractionDigits:1,maximumFractionDigits:1}).format(n)}
+function num(n){return new Intl.NumberFormat("es-AR",{maximumFractionDigits:0}).format(n)}
+function agg(a){var z=a.reduce(function(o,d){o.t+=d.t;o.rev+=d.rev;o.c+=d.c;o.res+=d.res;return o},{t:0,rev:0,c:0,res:0});z.m=z.rev?z.res/z.rev:0;return z}
+function rows(){return data.filter(function(d){return (scope.value==="all"||d.s===scope.value)&&(region.value==="all"||d.r===region.value)})}
+function regionOptions(){var prev=region.value;var a=data.filter(function(d){return scope.value==="all"||d.s===scope.value});region.innerHTML='<option value="all">Todas</option>'+a.map(function(d){return '<option value="'+d.r+'">'+d.r+'</option>'}).join("");if([].slice.call(region.options).some(function(o){return o.value===prev}))region.value=prev}
+function renderKpi(a){var z=agg(a);document.getElementById("rev").textContent=compact(z.rev);document.getElementById("cost").textContent=compact(z.c);document.getElementById("res").textContent=compact(z.res);document.getElementById("margin").textContent=pct(z.m);document.getElementById("trips").textContent=num(z.t)+" viajes · "+(z.t?money(z.rev/z.t):"$0")+" / viaje";document.getElementById("resTrip").textContent=(z.t?money(z.res/z.t):"$0")+" de resultado / viaje"}
+function renderCompare(){document.getElementById("compare").innerHTML=["Buenos Aires","Interior"].map(function(s){var z=agg(data.filter(function(d){return d.s===s}));return '<div class="box"><h3>'+s+'</h3><div class="metric"><span>Facturación</span><strong>'+compact(z.rev)+'</strong></div><div class="metric"><span>Costos</span><strong>'+compact(z.c)+'</strong></div><div class="metric"><span>Resultado</span><strong>'+compact(z.res)+'</strong></div><div class="metric"><span>Margen</span><strong class="m">'+pct(z.m)+'</strong></div><div class="metric"><span>Viajes</span><strong>'+num(z.t)+'</strong></div></div>'}).join("")}
+function renderChart(a){var s=a.slice().sort(function(x,y){return y.res-x.res});var mx=Math.max.apply(null,s.map(function(d){return Math.max(d.res,0)}).concat([1]));document.getElementById("chart").innerHTML=s.map(function(d){var w=Math.max(1,Math.max(d.res,0)/mx*100);return '<div class="barrow"><div class="barlabel" title="'+d.r+'">'+d.r+'</div><div class="track"><div class="bar" style="width:'+w+'%"></div></div><div class="barval">'+compact(d.res)+'</div></div>'}).join("");document.getElementById("chartsub").textContent=a.length===data.length?"Todas las regiones":a.length+" región"+(a.length===1?"":"es")}
+function renderTable(a){document.getElementById("tbody").innerHTML=a.slice().sort(function(x,y){return y.rev-x.rev}).map(function(d){return '<tr><td><strong>'+d.r+'</strong></td><td>'+num(d.t)+'</td><td>'+money(d.rev)+'</td><td>'+money(d.c)+'</td><td><strong>'+money(d.res)+'</strong></td><td><span class="pill">'+pct(d.m)+'</span></td><td>'+d.s+'</td></tr>'}).join("");document.getElementById("tablesub").textContent=a.length+" región"+(a.length===1?"":"es")+" operativa"+(a.length===1?"":"s")}
+function renderLines(items,total){if(!items.length)return '<div class="line"><div style="color:var(--amber)">Sin importes cargados en esta categoría.</div><div></div></div>';return items.slice().sort(function(a,b){return b[1]-a[1]}).map(function(x){return '<div class="line"><div>'+x[0]+'</div><div class="amount">'+money(x[1])+' <span style="color:var(--muted);font-weight:600">· '+pct(total?x[1]/total:0)+'</span></div></div>'}).join("")}
+function renderCosts(a){var ds=a.map(function(d){var x=costs[d.r];return {r:d.r,f:x.f,v:x.v,fi:x.fi,va:x.va}});var ft=ds.reduce(function(s,d){return s+d.f},0),vt=ds.reduce(function(s,d){return s+d.v},0),tt=ft+vt;document.getElementById("fixedKpi").textContent=compact(ft);document.getElementById("varKpi").textContent=compact(vt);document.getElementById("varPctKpi").textContent=pct(tt?vt/tt:0);document.getElementById("costsub").textContent=ds.length===1?ds[0].r:ds.length+" regiones visibles";var open=region.value!=="all";document.getElementById("costlist").innerHTML=ds.map(function(d){var tot=d.f+d.v,fs=tot?d.f/tot:0,vs=tot?d.v/tot:0,w=d.f===0?'<span class="warn">Fijos no cargados</span>':"";return '<details class="region" '+(open?"open":"")+'><summary><div class="rname">'+d.r+w+'</div><div class="sumcell">Costo total<strong>'+money(tot)+'</strong></div><div class="sumcell">Fijos<strong>'+money(d.f)+' · '+pct(fs)+'</strong></div><div class="sumcell">Variables<strong>'+money(d.v)+' · '+pct(vs)+'</strong></div><div class="chev">⌄</div></summary><div class="costbody"><div class="groups"><div class="group"><div class="ghead"><span>Costos fijos</span><strong>'+money(d.f)+'</strong></div>'+renderLines(d.fi,d.f)+'</div><div class="group"><div class="ghead"><span>Costos variables / directos</span><strong>'+money(d.v)+'</strong></div>'+renderLines(d.va,d.v)+'</div></div></div></details>'}).join("")}
+function render(){var a=rows();renderKpi(a);renderChart(a);renderTable(a);renderCosts(a)}
+scope.addEventListener("change",function(){regionOptions();render()});region.addEventListener("change",render);regionOptions();renderCompare();render();
+</script>
+</body></html>
