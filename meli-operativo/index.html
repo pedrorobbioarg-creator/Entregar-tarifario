@@ -288,14 +288,14 @@ td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
   </div>
 
   <div class="footer-note">
-    Fuente: Meli anual + septiembre + complementarias anual · Versión V13. Volumen por fecha real de viaje; facturación, penalidades y complementarias por período/quincena informado por Meli.
+    Fuente: Meli anual + septiembre + prefacturas octubre Q1 + complementarias anual · Versión V17. Volumen por fecha real de viaje; facturación, penalidades y complementarias por período/quincena informado por Meli.
     Regla de alerta: <b>amarillo</b> cuando la pendiente reciente o anual es negativa; <b>rojo</b> cuando la caída del período es ≥10% o la pendiente de los últimos 3 períodos es ≤−5% por período.
     Un mes/quincena parcial se muestra, pero no participa de la tendencia ni de las alertas. La comparación contra período anterior se habilita sólo cuando seleccionás un único mes o quincena.
   </div>
 </div>
 
 <script>
-const MAX_DATE = new Date("2026-10-15T00:00:00");
+const MAX_DATE = new Date("2026-10-16T00:00:00");
 const MONTHS = ["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"];
 const fmt = new Intl.NumberFormat("es-AR");
 const pctFmt = new Intl.NumberFormat("es-AR",{minimumFractionDigits:1,maximumFractionDigits:1});
